@@ -1,15 +1,16 @@
 let weather = {
-    "apiKey": "a197b3b0c584f42aa9ed3e42da13ad50",
+    "apiKey": "0af330586beb3b50118e029e0197bbe0",
     fetchWeather: function (city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" 
         + city 
         + "&units=imperial&appid=" 
         + this.apiKey
         )
+        // fetch("https://api.openweathermap.org/data/2.5/forecast?lat=")
     
         .then((response) => response.json())
         .then((data) => this.displayWeather(data));
-    
+        
     },
     displayWeather: function(data) {
         const { name } = data; 
@@ -22,7 +23,8 @@ let weather = {
         document.querySelector(".description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°F";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind Speed: " + speed + "m/hr";
+        document.querySelector(".wind").innerText = "Wind Speed: " + speed + " MPH";
+
     },
     search: function () {
         this.fetchWeather(document.querySelector(".search-bar").value);
