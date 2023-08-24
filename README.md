@@ -6,11 +6,8 @@ This is a Weather app that can find a current city's temperature.
 
 ## Final Product
 
-[![Final Product](assets/final_product.jpg)](assets/final_product.jpg)
+[![Final Product](assets/images/final_product.jpg)](assets/images/final_product.jpg)
 
-## Video of the Generator
-
-[https://drive.google.com/file/d/1QtO3N7Emqxc2TU7oncQm-ctBOxOEymK1/view](https://drive.google.com/file/d/1QtO3N7Emqxc2TU7oncQm-ctBOxOEymK1/view)
 
 ## Credits
 
